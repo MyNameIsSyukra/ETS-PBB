@@ -42,6 +42,7 @@ class MovieDatabase {
     return movie.copy(id: id);
   }
 
+
   Future<Movie>readMovie(int id) async{
     final db = await instance.database;
     final maps = await db.query(
@@ -84,4 +85,5 @@ class MovieDatabase {
     final db = await instance.database;
     db.close();
   }
+
 }

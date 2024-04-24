@@ -4,15 +4,12 @@ import 'package:flutter/material.dart';
 
 
 
-class DetailMovie extends StatefulWidget {
-  final int movieId;
-
-  const DetailMovie({Key? key, required this.movieId}) : super(key: key);
+class Main extends StatefulWidget {
   @override
-  State<DetailMovie> createState() => _DetailMovieState();
+  State<Main> createState() => _DetailMovieState();
 }
 
-class _DetailMovieState extends State<DetailMovie> {
+class _DetailMovieState extends State<Main> {
   late Movie movie;
   bool isLoading = false;
 
